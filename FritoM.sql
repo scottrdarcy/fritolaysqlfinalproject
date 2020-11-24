@@ -299,13 +299,13 @@ delete from dbo.Employees where Id = 1
 commit transaction
 
 --Write a DML statement that UPDATEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable 
-declare @employeeId int
-set @employeeId = 2
+declare @employeeIds int
+set @employeeIds = 2
 update dbo.Employee set Zipcode = '40291' where EmployeeId > @employeeId;
 
 --Write a DML statement that DELETEs a set of rows with a WHERE clause. The values used in the WHERE clause should be a variable  
-declare @employeeId int
-set @employeeId = 2
+declare @employeeIdz int
+set @employeeIdz = 2
 delete from dbo.Employee where EmployeeId > @employeeId;
 
 
